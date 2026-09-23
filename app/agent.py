@@ -22,7 +22,7 @@ from google.adk.models import Gemini
 from google.genai import types
 
 
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 
 def get_weather(query: str) -> str:
