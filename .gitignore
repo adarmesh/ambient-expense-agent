@@ -211,3 +211,8 @@ tools/a2a-inspector/
 *.pem
 *-key.json
 credentials*.json
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
