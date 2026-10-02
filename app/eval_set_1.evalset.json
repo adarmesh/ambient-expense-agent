@@ -1,0 +1,292 @@
+{
+  "eval_set_id": "eval_set_1",
+  "name": "eval_set_1",
+  "eval_cases": [
+    {
+      "eval_id": "hey_man_can_you_help_me_",
+      "conversation": [
+        {
+          "invocation_id": "e-7002ac3d-1836-4fd1-9e80-a6330fb8efa2",
+          "user_content": {
+            "parts": [
+              {
+                "text": "hey man, can you help me? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hey! I'd be happy to help. What's on your mind?",
+                "thought_signature": "EmAKXgFpFH0To29sfotBUNqY8lSpxJxKpFpwyxDXccvsGOF4pYRGczAAszRrcNRbZVxlp3fffQElEMVEj0PxY9-3vFQkYlzFXHKi50af6VS5y3iUNY90DhjKIcaCNSWOfOU="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1790861918.300504
+        },
+        {
+          "invocation_id": "e-ac0f26ce-6336-4275-afa8-8e45ba5d8e49",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what's the weather in almaty right now? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "It's currently 90 degrees and sunny in Almaty!",
+                "thought_signature": "EmAKXgFpFH0TF-zA3WBi3UBqGra2dpxuwvhEhzevo-8XAdhv-6LxS7SGtzIPfkU2DcmoLzYL7uFhz1hobOC5H_lb8691ARdAedbgBvnpJ_fA5KhBvlVWN332h5iu5EVjTPw="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "ambient_expense_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_174507",
+                        "args": {
+                          "query": "Almaty"
+                        },
+                        "name": "get_weather"
+                      },
+                      "thought_signature": "EmAKXgFpFH0TLMLNo7atgukwruhgmlOgjYAnTWJsqHlLS5U98qzGUs2o3Ahjiq2DDinb1QEaQGjD4tiVVZg9OTzXBvgskupIVxM77I1-fN9r-HwhZU3gwsj28zr53exwbhc="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "ambient_expense_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_174507",
+                        "name": "get_weather",
+                        "response": {
+                          "result": "It's 90 degrees and sunny."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1790861930.389293
+        },
+        {
+          "invocation_id": "e-127d7087-aae1-45d5-a9ca-b8a75778e786",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what's current time? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "It looks like I don't have access to the current timezone data right now, but since you're asking about Almaty, it operates on Alma-Ata time (UTC+5). Is there anything else I can help you with?",
+                "thought_signature": "EmAKXgFpFH0TAN0z3xlPGl6fGADQyqAZk539GfczydPPclE8_oPjWyTlzQu5HqMqp4IwumHc3MzB-pAU5Fsx4aAzZfBl03-dXZXKvnJia5z5teVrDlYSt3unEjCuLVs-yVY="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "ambient_expense_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_300084",
+                        "args": {
+                          "query": "Almaty"
+                        },
+                        "name": "get_current_time"
+                      },
+                      "thought_signature": "EmAKXgFpFH0TUC2ovey-GAlPh1WOlPwrjkg-HQewaZu0_UK8h4V1sgVQ6sDdJmNwJm67lbmQuUSDemCDJqyt8p7am9takNYcARo7KcKT2EpaLjrTOXvYGCS76ODOizT-Wj0="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "ambient_expense_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_300084",
+                        "name": "get_current_time",
+                        "response": {
+                          "result": "Sorry, I don't have timezone information for query: Almaty."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "ambient_expense_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_call": {
+                        "id": "call_283897",
+                        "args": {
+                          "query": "Almaty, Kazakhstan"
+                        },
+                        "name": "get_current_time"
+                      },
+                      "thought_signature": "EmAKXgFpFH0TGjhfpW2r-SX1w7HcsU9cNL7dhX4s28DQ6QQAwozD-XHw6PndTiE3WXY8nOfcAjqoHRAMhwQhF4nVuDK_ZxK94Gx-aX_gXCu1Wr0LEYGgd_iksiDGR61R5So="
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "ambient_expense_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_283897",
+                        "name": "get_current_time",
+                        "response": {
+                          "result": "Sorry, I don't have timezone information for query: Almaty, Kazakhstan."
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1790861942.1480389
+        },
+        {
+          "invocation_id": "e-6918834a-61a8-47ba-84e0-13b54c3526b3",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what timezones are available for you? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I don't have a pre-programmed list of available timezones; instead, I use a tool to look them up dynamically based on the city or location you provide. \n\nHowever, the current time lookup tool I use seems to be running into a bit of trouble recognizing certain location queries. If you let me know which city you're interested in, I can try running it again, or you can tell me the city and I can do my best to help you figure out the time!",
+                "thought_signature": "EmAKXgFpFH0TeL3dd_oRX_jpkbLRUCVzv7mLkVMEOe4i1vZLNagNFM2hjMzRniAvLvHQI6p2fEfCGl3K3NGhzENHb2NhT07kB06s6QZMHf0ATM9oUg_iGIYD9O5KZrIjwgg="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1790861963.859145
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1790861983.8189209
+    },
+    {
+      "eval_id": "who_is_current_president_of_usa_",
+      "conversation": [
+        {
+          "invocation_id": "e-2b9004b0-4d48-4cb9-b236-003b82182c55",
+          "user_content": {
+            "parts": [
+              {
+                "text": "who is current president of usa? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "As of my last update, the President of the United States is Joe Biden. Please note that political leadership may change, so you may want to check a current news source for the most up-to-date information.",
+                "thought_signature": "EmAKXgFpFH0TRmKBLi1QyUxROlIKS0wnJ3mFwCefLmlChtU7qrSYQeA79tT23iCZuia-N9SR6UBouIxFWre4e9s58ZKUVvEHpzsBdF5dWpd22Fp4S9Cza2xOiEp-d3rK4RY="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1790924247.055926
+        },
+        {
+          "invocation_id": "e-10658777-f1cb-424a-b34c-d874013c00c6",
+          "user_content": {
+            "parts": [
+              {
+                "text": "what's the year right now? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I do not have access to real-time information or the current date, so I cannot confirm what year it is right now. You can check the date on your device's system clock or a current calendar!",
+                "thought_signature": "EmAKXgFpFH0TVW8tNRWztbYAQRxADmWpz7SaxRHO7S8_knBDUPM_OSaMNg6j9Lq83vVmTXswjbnOTB-Rpg1lFJyotBfVQaVVt8MIWhwVWi0UaSdxVV3ORCza3BsVvZ6ZuA0="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1790924258.820204
+        },
+        {
+          "invocation_id": "e-e306330e-842f-4e3d-b0a0-2c257af4ff61",
+          "user_content": {
+            "parts": [
+              {
+                "text": "do you have web fetch tool? "
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "I don't have a direct general web-browsing or web-fetching tool available right now, but I do have specific tools like `get_weather` and `get_current_time`. If you need to know the current time in a specific city, I can check that for you!",
+                "thought_signature": "EmAKXgFpFH0TAznKRIDePcr0IXaR5c9RlqfH3er0qhE87w0myDdMgUvZUUmmF9U-XUzuMNx_ngg5HBj_IKNf70kpff6Oo8x9m6fE1JUj4CUh8yfW81QKgnkolXD1oC_Me9A="
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {},
+          "creation_timestamp": 1790924265.7622778
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1790924276.25367
+    }
+  ],
+  "creation_timestamp": 1790861977.668374
+}
