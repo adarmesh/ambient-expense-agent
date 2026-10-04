@@ -196,6 +196,7 @@ dependencies = [
     { name = "mlflow" },
     { name = "openai" },
     { name = "opentelemetry-resourcedetector-gcp" },
+    { name = "ruff" },
 ]
 
 [package.optional-dependencies]
@@ -229,6 +230,7 @@ requires-dist = [
     { name = "mlflow", specifier = ">=3.16.1" },
     { name = "openai", specifier = ">=2.54.0" },
     { name = "opentelemetry-resourcedetector-gcp", specifier = "<=1.12.0a0" },
+    { name = "ruff", specifier = ">=0.16.8" },
     { name = "ruff", marker = "extra == 'lint'", specifier = ">=0.4.6,<1.0.0" },
     { name = "ty", marker = "extra == 'lint'", specifier = ">=0.0.1a0" },
 ]
